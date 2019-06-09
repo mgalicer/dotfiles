@@ -1,0 +1,32 @@
+config defaultToCurrentScreen true
+
+# Abstract positions
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias leftTwoThirds move screenOriginX;screenOriginY screenSizeX*2/3;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias rightOneThird move screenOriginX+screenSizeX*2/3;screenOriginY screenSizeX/3;screenSizeY
+alias tophalf move screenOriginX;screenOriginY screenSizeX;screenSizeY/2
+alias bottomhalf move screenOriginX;screenOriginY+screenSizeY/2 screenSizeX;screenSizeY/2
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+# Bind command+option+b to google chrome
+bind f:ctrl;cmd focus 'Firefox'
+
+alias double alt;shift
+
+# Location bindings
+bind left:${double} ${lefthalf}
+bind m:${double} ${full}
+bind right:${double} ${righthalf}
+bind up:${double} ${tophalf}
+bind down:${double} ${bottomhalf}
+bind ,:${double} ${leftTwoThirds}
+bind .:${double} ${rightOneThird}
+
+# Monitor switching bindings
+bind right:alt,ctrl throw 1 resize
+bind left:alt,ctrl throw 0 resize

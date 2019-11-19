@@ -6,3 +6,4 @@ alias python=python3
 alias gti=git
 alias gs='git status'
 eval "$(rbenv init -)"
+. ~/.git-completion.bash

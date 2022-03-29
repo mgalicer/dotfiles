@@ -1,0 +1,24 @@
+{
+  "workbench.statusBar.visible": false,
+  "editor.minimap.enabled": false,
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.formatOnPaste": true,
+  "breadcrumbs.filePath": "off",
+  "breadcrumbs.enabled": false,
+  "zenMode.hideLineNumbers": false,
+  "window.zoomLevel": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.activityBar.visible": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggest.statusBar.visible": true,
+  "editor.fontSize": 11,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "testExplorer.showOnRun": true,
+  "eslint.run": "onSave",
+  "editor.lineNumbers": "off",
+}
